@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="head">
+            <h1 class="head-inner"> Expense-Tracker</h1>
+        </div>
+        
+        <div class="main">
+            <div class="left">
+                <div class="date">
+                    <label > Start-Date -:</label>
+                    <input type="date" id="date-start">
+                    <label > End-Date -:</label>
+                    <input type="date" id="date-end">
+                </div>
+                <select name="" id="selector" class="selector" onchange="getselectvalue()" >
+                    <option  hidden value="" >Choose One</option>
+                    <option  value="cradit">Cradit</option>
+                    <option value="deposit">Deposit</option>
+                </select>
+                <input type="number" id="amount" placeholder="Enter Amount">
+               
+                <button type="submit" id="submit" >submit</button>
+            </div>
+            <div class="right">
+                <textarea name="" id="resason-box" cols="30" rows="10" placeholder="Please enter Reason"></textarea>
+            </div>
+     </div>
+         <div class="submain">
+            <div class="listdisplay">
+                <div class="cradit" >                 
+                   <h1>Credit</h1>
+                        
+                   <table>
+                    <thead>
+                        <!-- <th>Start-Date</th>
+                        <th>End-Date</th> -->
+                        <th>Credit/Debit</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Edit</th>
+                    </thead>
+                    <tbody id="expense-body">
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total-:</td>
+                            <td id=" totalAmount"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                  </table>
+                
+                </div>
+                <div class="deposit">
+                    <h1>Deposit</h1>
+                     
+                   <table>
+                    <thead>
+                        <!-- <th>Start-Date</th>
+                        <th>End-Date</th> -->
+                        <th>Credit/Debit</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Edit</th>
+                    </thead>
+                    <tbody id="expense-body">
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total-:</td>
+                            <td id=" totalAmount"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                  </table>
+                </div>
+            </div>
+       
+         </div>
+            
+    </div>
+</section>
+
+<!-- <section>
+    <div class="sec-container">
+
+        <div class="date-check">
+            <label class="date-label"> Enter Date-:</label>
+            <input type="date" placeholder="Enter Date" id="check-date">
+        </div>
+        <div class="submain">
+            <div class="listdisplay">
+                <div class="cradit">
+                   <h1>Credit</h1>
+
+                   <table>
+                    <thead>
+                        <th>Start-Date</th>
+                        <th>End-Date</th>
+                        <th>Credit/Debit</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Edit</th>
+                    </thead>
+                    <tbody id="expense-body">
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total-:</td>
+                            <td id=" totalAmount"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="deposit">
+                    <h1>Deposit</h1>
+
+                    <table>
+                        <thead>
+                            <th>Start-Date</th>
+                            <th>End-Date</th>
+                            <th>Credit/Debit</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                            <th>Edit</th>
+                        </thead>
+                        <tbody id="expense-body">
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total-:</td>
+                                <td id=" totalAmount"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                      </table>
+                </div>
+            </div>
+
+    </div>
+</section> -->
+<script src="expence.js"></script>
+</body>
+</html>

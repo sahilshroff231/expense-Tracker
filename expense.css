@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+   
+}
+body{
+    background: linear-gradient(180deg , rgb(246, 241, 204) ,rgb(252, 180, 142));
+}
+
+.container{
+    display: flex ;
+    /* border: 2px solid red; */
+    padding: 20px;
+    flex-direction: column;
+    border-bottom: 2px solid gray;
+}
+.head{ 
+    display: flex;  
+    justify-content: center;
+}
+.head-inner{
+    text-align: center; 
+    border-bottom: 2px solid gray;
+    width: 200px; 
+}
+.main{
+    display: flex;
+    width: 80%;
+    height: auto;
+    /* border: 2px solid red; */
+    margin: 30px 0 0 120px;
+    justify-content: center;
+
+    
+}
+.left{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 20px;
+}
+.right{
+    margin: 20px 0 0 80px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.tbcss tr td{
+    padding: 10px;
+}
+.tbhead th{
+    padding-left: 20px;
+}
+.s-date{
+  
+    display: flex;
+    font-size: 15px;
+    font-weight: 900;
+}
+#date-start{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#date-end{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.selector{
+    margin-top: 30px;
+    height:5vh ;
+    width:8vw; 
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#amount{
+     margin-top: 20px;
+    height:5vh ;
+    width:8vw; 
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#resason-box{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+#submit{
+    margin-top: 20px;
+    height:25px ;
+    width:70px; 
+    background-color:rgb(95, 128, 246);
+    border-radius: 5px; 
+
+}
+.Edit{
+    height:25px ;
+    width:70px; 
+    background-color:rgb(95, 128, 246);
+    border-radius: 5px; 
+}
+#submit:hover{
+    background-color:rgb(131, 157, 248);
+}
+#submit:active{
+    background-color:rgb(174, 191, 253);
+}
+
+.listdisplay{
+    display: flex;
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.cradit{
+
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height:100vh;
+}
+#expense-body{
+    color: black;
+}
+
+.deposit{
+    
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+}
+.cradit h1{
+    border-bottom: 4px solid green;
+    
+    
+}
+.deposit h1{
+    border-bottom: 4px solid red;
+}
+.sec-container{
+    margin-top: 80px;
+}
+
+
+.date-check{
+     margin: 120px;
+}
+
+.date-label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#check-date{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}
